@@ -5,10 +5,9 @@
 # it emulates the modifications of the setup script without recurring computations
 
 # new environment variables
-export CMAKE_PREFIX_PATH="/home/ahmed/Ros/Task2/robot_ws/devel"
-export LD_LIBRARY_PATH="/home/ahmed/Ros/Task2/robot_ws/devel/lib"
-export PKG_CONFIG_PATH=""
-export PYTHONPATH=""
 
 # modified environment variables
-export PWD="/home/ahmed/Ros/Task2/robot_ws/build"
+export CMAKE_PREFIX_PATH="/home/ahmed/Ros_course/Task2/robot_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/ahmed/Ros_course/Task2/robot_ws/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/ahmed/Ros_course/Task2/robot_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/ahmed/Ros/Task2/robot_ws/src:/home/ahmed/Ros_course/Task2/robot_ws/src:$ROS_PACKAGE_PATH"

@@ -1,10 +1,10 @@
-#!/usr/bin/env python 3.8
+#!/usr/bin/env python3.8
 
 import rospy
-from std_msgs.msg import int16
+from std_msgs.msg import Int16
 
 def talker():
-    pub= rospy.Publisher('topic', int,queue_size=10)
+    pub= rospy.Publisher('topic', Int16,queue_size=10)
     rospy.init_node('node1', anonymous=True)
     rate = rospy.Rate(5)
     counter = 0
@@ -14,5 +14,8 @@ def talker():
         rospy.loginfo (counter)
         pub.publish(counter)
         rate.sleep()
-
-talker()
+if __name__ == "__main__":
+     try:
+        talker()
+     except rospy.ROSInterruptException:
+        pass

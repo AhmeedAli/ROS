@@ -1,0 +1,2 @@
+robot
+-DCATKIN_DEVEL_PREFIX=/home/ahmed/Ros_course/Task3/robot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ahmed/Ros_course/Task3/robot_ws/install -G Unix Makefiles
